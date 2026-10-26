@@ -65,8 +65,6 @@ const addTask = function () {
   taskInput.value = '';
 };
 
-//Edit an existing task.
-
 const editTask = function () {
   const listItem = this.parentNode;
 
@@ -89,7 +87,6 @@ const editTask = function () {
   listItem.classList.toggle('editMode');
 };
 
-//Delete task.
 const deleteTask = function () {
   const listItem = this.parentNode;
   const ul = listItem.parentNode;
@@ -97,7 +94,6 @@ const deleteTask = function () {
   ul.removeChild(listItem);
 };
 
-//Mark task completed
 const taskCompleted = function () {
   //Append the task list item to the #completed-tasks
   const listItem = this.parentNode;
